@@ -1,5 +1,5 @@
 
-##Bootstrap Responsive Layout Assignment
+## Bootstrap Responsive Layout Assignment
 
 
 ## Technologies Used
