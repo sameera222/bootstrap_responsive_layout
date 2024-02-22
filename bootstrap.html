@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 4 Responsive Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+  </head>
+  <body>
+    <div style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px 0px">
+      <div
+        class="container d-none d-lg-flex align-items-center justify-content-between p-3"
+      >
+        <a href="/">
+          <img
+            src="/assets/whole.svg"
+            width="162.57px"
+            height="24px"
+            alt="logo"
+          />
+        </a>
+
+        <form class="d-flex" style="width: 360px; border-radius: 21px">
+          <button class="custom-search" type="submit">
+            <img
+              alt="search"
+              src="/assets/baseline-search-24px.svg"
+              width="22"
+              height="22"
+            />
+          </button>
+          <input
+            class="form-control custom-input-search"
+            type="search"
+            placeholder="Search for your favorite groups in ATG"
+          />
+        </form>
+
+        <div class="d-flex align-items-center gap-1">
+          <button
+            class="btn custom-btn-create p-0 m-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            create Account.
+            <span class="text-primary fw-bold"> It's Free! </span>
+          </button>
+          <img
+            src="/assets/baseline-arrow_drop_down-24px.svg"
+            width="24px"
+            height="24px"
+            alt="logo"
+          />
+        </div>
+      </div>
+    
+      <div
+        class="container-fluid p-0 position-relative custom-bg-container"
+        style="
+          background: url(/assets/Rectangle\ 2.svg) center center / cover
+            no-repeat;
+          height: 440px;
+        "
+      >
+        <div
+          class="container-fluid p-0 position-relative custom-bg-container"
+          style="
+            background: url(/assets/Rectangle\ 3.svg) center center / cover
+              no-repeat;
+            height: 440px;
+          "
+        >
+          <div class="overlay"></div>
+
+          <div class="container d-flex flex-column h-100 background-text-home">
+            <div class="d-flex justify-content-between mt-3">
+              <button class="btn d-lg-none">
+                <img src="/assets/arrow_back_24px_outlined.svg" alt="back" />
+              </button>
+              <button class="btn join-group d-lg-none">Leave Group</button>
+            </div>
+            <div>
+              <h1 class="text-white">Computer Engineering</h1>
+              <p class="text-white mb-5">
+                142,765 Computer Engineers follow this
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="d-none d-lg-flex justify-content-between mx-auto align-items-center container sticky-top"
+        style="
+          max-width: 1040px;
+          height: 68px;
+          background: rgb(255, 255, 255);
+          border-top: 1px solid rgba(0, 0, 0, 0.2);
+        "
+      >
+        <ul class="nav my-2 nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" href="/bootstrap.html">All Posts (32)</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" >Article</a></li>
+          <li class="nav-item"><a class="nav-link" >Event</a></li>
+          <li class="nav-item"><a class="nav-link">Education</a></li>
+          <li class="nav-item"><a class="nav-link">Job</a></li>
+        </ul>
+        <div class="d-flex my-2 align-items-center">
+          <button
+            class="btn"
+            aria-label="write-post"
+            style="background: rgb(242, 242, 242)"
+          >
+            Write Post
+            <img
+              src="assets/baseline-arrow_drop_down-24px.svg"
+              width="22px"
+              height="22px"
+              alt="arrow down"
+            />
+          </button>
+
+          <button
+            class="btn btn-primary ms-2 gap-2 d-flex align-items-center"
+            aria-label="Join group"
+            style="border: 0.8px solid rgb(152, 152, 153)"
+          >
+            <img src="/assets/Vector.svg" alt="Join group" />Join Group
+          </button>
+        </div>
+      </div>
+
+      <hr
+        class="mx-auto mt-0"
+        style="max-width: 1040px; border-width: 2px; color: #e0e0e0"
+      />
+
+      <div
+        class="mx-auto d-flex gap-5 justify-content-center"
+        style="max-width: 1040px"
+      >
+        <div class="posts-center position-relative">
+          <div
+            class="d-flex d-lg-none w-100 position-absolute top-4 align-items-center justify-content-between custom-main-button"
+          >
+            <div class="text-main-posts d-lg-none">Posts(368)</div>
+            <div class="d-lg-none">
+              <button
+                class="btn btn-filter d-flex align-items-center d-lg-none gap-2"
+              >
+                Filter : All
+                <img
+                 src="assets/baseline-arrow_drop_down-24px.svg"
+                  alt="arrowdown"
+                  width="20"
+                  height="20"
+                />
+              </button>
+            </div>
+          </div>
+       
+          <main class="d-flex flex-column gap-4">
+            <div
+              class="d-flex flex-column border border-1 rounded-2"
+              style="
+                max-width: 692px;
+                border-color: rgb(224, 224, 224);
+                fill: rgb(255, 255, 255);
+              "
+            >
+              <img src="assets/Rectangle 5.svg" />
+              <div class="p-4">
+                <h6 class="d-flex">✍️ Article</h6>
+                <div class="d-flex gap-6 justify-content-between">
+                  <h4>
+                    What if famous brands had regular fonts? Meet RegulaBrands!
+                  </h4>
+                  <div class="btn align-self-start">
+                    <div class="dropdown">
+                      <div
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="assets/baseline-more_vert-24px.svg"
+                          alt="more details"
+                          height="28px"
+                          width="28px"
+                        />
+                      </div>
+                   
+                    </div>
+                  </div>
+                </div>
+                <ul class="d-flex align-items-center gap-5 list-unstyled"></ul>
+                <p>
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="rounded-circle"
+                      alt="Profile"
+                      src="https://dont-copy.netlify.app/assets/user1-COSOQoOX.jpg"
+                      width="48"
+                      height="48"
+                    />
+                    <div class="d-flex flex-column">
+                      <h6 class="text-wrapper">Sathark Kamra</h6>
+                      <div class="d-lg-none">
+                        <img
+                          src="assets/visibility_24px.svg"
+                          alt="watch"
+                          height="18"
+                          width="18"
+                        />
+                        <span>1.4k views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-none d-lg-block p-4">
+                      <img
+                        src="assets/visibility_24px.svg"
+                        alt="watch"
+                        height="18"
+                        width="18"
+                      />
+                      <span>1.4k views</span>
+                    </div>
+                    <button
+                      class="btn d-flex align-items-center gap-2"
+                      style="background: rgb(237, 238, 240)"
+                    >
+                      <img src="/assets/baseline-share-24px.svg" alt="share" />
+
+                      <span class="d-lg-none">Share</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column border border-1 rounded-2"
+              style="
+                max-width: 692px;
+                border-color: rgb(224, 224, 224);
+                fill: rgb(255, 255, 255);
+              "
+            >
+              <img
+                src="/assets/Rectangle 5 (1).svg"
+                alt="Nature"
+                class="imagePost"
+              />
+              <div class="p-4">
+                <h6 class="d-flex">🔬️ Education</h6>
+                <div class="d-flex gap-6 justify-content-between">
+                  <h4>
+                    Tax Benefits for Investment under National Pension Scheme
+                    launched by Government
+                  </h4>
+                  <div class="btn align-self-start">
+                    <div class="dropdown">
+                      <div
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="assets/baseline-more_vert-24px.svg"
+                          alt="more details"
+                          height="28px"
+                          width="28px"
+                        />
+                      </div>
+                   
+                    </div>
+                  </div>
+                </div>
+                <ul class="d-flex align-items-center gap-5 list-unstyled"></ul>
+                <p>
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="rounded-circle"
+                      alt="Profile"
+                      src="/assets/sarah_west.jpg"
+                      width="48"
+                      height="48"
+                    />
+                    <div class="d-flex flex-column">
+                      <h6 class="text-wrapper">Sarah West</h6>
+                      <div class="d-lg-none">
+                        <img src="assets/visibility_24px.svg" alt="watch" />
+                        <span>1.4k views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-none d-lg-block pe-4">
+                      <img src="assets/visibility_24px.svg" alt="watch" />
+                      <span>1.4k views</span>
+                    </div>
+                    <button
+                      class="btn d-flex align-items-center gap-2"
+                      style="background: rgb(237, 238, 240)"
+                    >
+                      <img
+                        src="/assets/baseline-share-24px.svg"
+                        alt="share"
+                      /><span class="d-lg-none"> Share</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column border border-1 rounded-2"
+              style="
+                max-width: 692px;
+                border-color: rgb(224, 224, 224);
+                fill: rgb(255, 255, 255);
+              "
+            >
+              <img src="/assets/MeetUp.svg" alt="Nature" class="imagePost" />
+              <div class="p-4">
+                <h6 class="d-flex">🗓️ Meetup</h6>
+                <div class="d-flex gap-6 justify-content-between">
+                  <h4>Finance &amp; Investment Elite Social Mixer @Lujiazui</h4>
+                  <div class="btn align-self-start">
+                    <div class="dropdown">
+                      <div
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="assets/baseline-more_vert-24px.svg"
+                          alt="more details"
+                          height="28px"
+                          width="28px"
+                        />
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            Edit
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            Report
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            option 3
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="d-flex align-items-center gap-5 list-unstyled">
+                  <li class="d-flex align-items-center gap-1">
+                    <img
+                      src="assets/baseline-today-24px.svg"
+                      alt="date"
+                      width="20px"
+                      height="20px"
+                    />
+                    <span style="font-weight: 600"> Fri, 12 Oct, 2018 </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-1">
+                    <img
+                      src="assets/Outline.svg"
+                      alt="location"
+                      width="20px"
+                      height="20px"
+                    />
+                    <span style="font-weight: 600">Ahmedabad, India</span>
+                  </li>
+                </ul>
+                <button
+                  class="custom-post-link btn mb-4 fw-semibold"
+                  style="
+                    color: #e56135;
+                    width: 100%;
+                    border: #a9aeb8 border;
+                    font-weight: 400;
+                  "
+                >
+                  Visit WebSite
+                </button>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="rounded-circle"
+                      alt="Profile"
+                      src="/assets/alpha.jpg"
+                      width="48"
+                      height="48"
+                    />
+                    <div class="d-flex flex-column">
+                      <h6 class="text-wrapper">Ronal Jones</h6>
+                      <div class="d-lg-none">
+                        <img src="assets/visibility_24px.svg" alt="watch" />
+                        <span>1.4k views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-none d-lg-block pe-4">
+                      <img src="assets/visibility_24px.svg" alt="watch" />
+                      <span>1.4k views</span>
+                    </div>
+                    <button
+                      class="btn d-flex align-items-center gap-2"
+                      style="background: rgb(237, 238, 240)"
+                    >
+                      <img
+                        src="assets/baseline-share-24px.svg"
+                        alt="share"
+                      /><span class="d-lg-none">Share</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column border border-1 rounded-2"
+              style="
+                max-width: 692px;
+                border-color: rgb(224, 224, 224);
+                fill: rgb(255, 255, 255);
+              "
+            >
+              <div class="p-4">
+                <h6 class="d-flex">💼️ Job</h6>
+                <div class="d-flex gap-6 justify-content-between">
+                  <h4>Software Developer</h4>
+                  <div class="btn align-self-start">
+                    <div class="dropdown">
+                      <div
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="assets/baseline-more_vert-24px.svg"
+                          alt="more details"
+                          height="28px"
+                          width="28px"
+                        />
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            Edit
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            Report
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" type="button">
+                            option 3
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="d-flex align-items-center gap-5 list-unstyled">
+                  <li class="d-flex align-items-center gap-1">
+                    <img
+                      src="assets/outline-work_outline-24px.svg"
+                      alt="date"
+                      width="20px"
+                      height="20px"
+                    />
+                    <span style="font-weight: 600">
+                      Innovaccer Analytics Private Ltd.
+                    </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-1">
+                    <img
+                      src="assets/Outline.svg"
+                      alt="location"
+                      width="20px"
+                      height="20px"
+                    />
+                    <span style="font-weight: 600"> Noida, India </span>
+                  </li>
+                </ul>
+                <button
+                  class="custom-post-link btn mb-4 fw-semibold"
+                  style="color: rgb(2, 184, 117); width: 100%"
+                >
+                  Apply on Timejobs
+                </button>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="rounded-circle"
+                      alt="Profile"
+                      src="/assets/alpha-sigma.jpg"
+                      width="48"
+                      height="48"
+                    />
+                    <div class="d-flex flex-column">
+                      <h6 class="text-wrapper">Jospeh Gray</h6>
+                      <div class="d-lg-none">
+                        <img src="assets/visibility_24px.svg" alt="watch" />
+                        <span>1.4k views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-none d-lg-block pe-4">
+                      <img src="assets/visibility_24px.svg" alt="watch" />
+                      <span>1.4k views</span>
+                    </div>
+                    <button
+                      class="btn d-flex align-items-center gap-2"
+                      style="background: rgb(237, 238, 240)"
+                    >
+                      <img
+                        src="assets/baseline-share-24px.svg"
+                        alt="share"
+                      /><span class="d-lg-none">Share</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="container d-none d-lg-flex flex-column mt-4">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <img src="assets/Outline.svg" alt="location" />
+              <input
+                type="text"
+                placeholder="|Enter Your Location"
+                class="input-text"
+              />
+            </div>
+            <button class="btn">
+              <img src="assets/baseline-edit-24px.svg" alt="edit" />
+            </button>
+          </div>
+          <hr class="my-1" />
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <img
+              src="assets/edit_below.svg"
+              alt="information"
+              class="align-self-start"
+            />
+            <p class="location-info">
+              Your location will help us serve better and extend a personalised
+              experience.
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-2 text-capitalize mb-3">
+            <img src="assets/THUMB.svg" alt="thumbs up" /><span
+              class="text-recommended"
+            >
+              RECOMMENDED GROUPS</span
+            >
+          </div>
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="rounded-circle"
+                  alt="Profile"
+                  src="/assets/group-1.jpg"
+                  width="36"
+                  height="36"
+                />
+                <div class="text-wrapper">Leisure</div>
+              </div>
+              <a class="btn follow rounded-5" href="/">Follow</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="rounded-circle"
+                  alt="Profile"
+                  src="/assets/group-2.jpg"
+                  width="36"
+                  height="36"
+                />
+                <div class="text-wrapper">Activism</div>
+              </div>
+              <a class="btn follow rounded-5" href="/">Follow</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="rounded-circle"
+                  alt="Profile"
+                  src="/assets/group-3.jpg"
+                  width="36"
+                  height="36"
+                />
+                <div class="text-wrapper">MBA</div>
+              </div>
+              <a class="btn follow rounded-5" href="/">Follow</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="rounded-circle"
+                  alt="Profile"
+                  src="/assets/group-4.jpg"
+                  width="36"
+                  height="36"
+                />
+                <div class="text-wrapper">Philosophy</div>
+              </div>
+              <a class="btn follow rounded-5" href="/">Follow</a>
+            </div>
+          </div>
+          <button class="btn text-end mt-5 text-primary text-capitalize">
+            see more...
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
